@@ -6,7 +6,7 @@ The objective of this milestone is to build a functional frontend fitness plan g
 •	Demonstrates conditional logic for adaptive fitness planning.
 •	Prepares the foundation for future AI/ML integration (e.g., LLM-powered workout generation).
 This milestone focuses on creating a clean UI, structured logic, and scalable architecture for future enhancements like BMI calculation, diet planning, and AI-driven customization.
-________________________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________________________________
 BMI Formula Explanation
 What is BMI?
 BMI (Body Mass Index) is a numerical value calculated using a person’s weight and height. It helps estimate whether a person falls within a healthy weight range.
@@ -26,18 +26,18 @@ BMI Categories (Standard WHO Classification)
 •	18.5 – 24.9 → Normal weight
 •	25.0 – 29.9 → Overweight
 •	30.0 and above → Obese
-________________________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________________________________
 Future Improvements
 •	Add BMI calculator directly into the Streamlit app
 •	Add calorie requirement estimation
 •	Add AI-powered personalized weekly workout schedules
 •	Integrate diet planning module
 •	Deploy on Streamlit Cloud
-________________________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________________________________
 Tech Stack
-•	Python: Core programming logic.
-•	Streamlit: Web framework for the user interface.
-•	Hugging Face Spaces: Cloud hosting platform.
-•	GitHub: Version control and repository management.
-________________________________________________________________________________________________________________________________________________________________________________________________________
+•	Python:
+•	Streamlit
+•	Hugging Face Spaces
+•	GitHub
+____________________________________________________________________________________________________________________________________________________________________
 Hugging Face Link:- https://huggingface.co/spaces/srbhavya01/Fitplan
