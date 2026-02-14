@@ -2,9 +2,13 @@ Milestone1: Fitness Plan Generator
 Objective:
 
 The objective of this milestone is to build a functional frontend fitness plan generator using Streamlit that:
+
 •	Collects user inputs such as fitness goal, fitness level, and available equipment.
+
 •	Generates a personalized workout recommendation based on selected inputs.
+
 •	Demonstrates conditional logic for adaptive fitness planning.
+
 •	Prepares the foundation for future AI/ML integration (e.g., LLM-powered workout generation).
 
 This milestone focuses on creating a clean UI, structured logic, and scalable architecture for future enhancements like BMI calculation, diet planning, and AI-driven customization.
