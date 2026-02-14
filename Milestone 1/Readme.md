@@ -28,16 +28,25 @@ Step-by-Step Explanation
    
 ____________________________________________________________________________________________________________________________________________________________________
 Future Improvements
+
 •	Add BMI calculator directly into the Streamlit app.
+
 •	Add calorie requirement estimation.
+
 •	Add AI-powered personalized weekly workout schedules.
+
 •	Integrate diet planning module.
+
 •	Deploy on Streamlit Cloud.
 ____________________________________________________________________________________________________________________________________________________________________
 Tech Stack
+
 •	Python.
+
 •	Streamlit.
+
 •	Hugging Face Spaces.
+
 •	GitHub.
 ____________________________________________________________________________________________________________________________________________________________________
 Hugging Face Link:- https://huggingface.co/spaces/srbhavya01/Fitplan
