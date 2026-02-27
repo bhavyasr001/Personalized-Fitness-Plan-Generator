@@ -1,149 +1,275 @@
+🏋️ FitPlan AI — Personalized Workout Generator
+
 🎯 Objective of the Milestone
+The objective of this milestone is to design and implement an AI-powered system that generates a personalized 5-day workout plan based on the user's fitness profile.
 
-The objective of this milestone is to develop an AI-powered personalized fitness planning system that generates a structured 5-day workout plan based on user inputs such as height, weight, gender, fitness level, goal, and available equipment.
+This milestone focuses on:
 
-This milestone demonstrates:
+Integrating a Large Language Model (LLM)
 
-Integration of a Large Language Model (LLM)
+Designing an effective prompt
 
-Prompt engineering for personalized outputs
+Testing inference generation
 
-Health-based customization using BMI
+Displaying structured output in Streamlit
 
-Deployment-ready application using Streamlit
+Preparing deployment on Hugging Face Spaces
 
-The system acts as a virtual fitness trainer that produces safe, structured, and goal-oriented workout routines.
 
-🤖 Model Used
+🤖 Model Name Used
 
-Model Name: Mistral AI — Mistral-7B-Instruct-v0.2
+Qwen/Qwen2.5-7B-Instruct
 
-Platform: Hugging Face Inference API
+Provider: Hugging Face Inference API
 
-Access Method: huggingface_hub InferenceClient
+This model was selected because:
 
-The model is an instruction-tuned LLM capable of generating structured fitness plans based on prompts.
+Instruction-tuned (good for task-based generation)
+
+Generates structured responses
+
+Suitable for fitness plan creation
+
+Works efficiently with prompt engineering
+
 
 🧠 Prompt Design Explanation
 
-The prompt was carefully engineered to guide the model to produce structured and safe workout plans.
+The prompt is carefully engineered to simulate a certified professional fitness trainer.
 
-Key prompt features:
+Prompt includes:
 
-Includes detailed user profile
+User Profile:
 
-Uses BMI calculation for personalization
+Name
 
-Specifies formatting rules (Day 1–Day 5)
+Age
 
-Requests exercises with sets, reps, and rest
+Gender
 
-Adjusts intensity based on fitness level
+Height & Weight
 
-Avoids unsafe exercises for beginners
+BMI + Category
 
-Example prompt components:
+Fitness Goal
 
-Personal details
+Fitness Level
 
-Fitness goal
+Available Equipment
 
-Equipment availability
+Instruction Constraints:
 
-Safety instructions
+The model is instructed to:
 
-Output formatting requirements
+Generate a structured 5-day plan
 
-This ensures consistent and high-quality responses.
+Include exercises with sets & reps
+
+Include rest time
+
+Adjust intensity based on BMI & age
+
+Avoid unsafe exercises for beginners
+
+Maintain professional tone
+
+This ensures consistent and relevant output.
 
 ⚙️ Steps Performed
 1️⃣ Model Loading
 
-Loaded Mistral-7B-Instruct-v0.2 via Hugging Face InferenceClient
+The Hugging Face InferenceClient is used to connect to the LLM:
 
-Authentication using HF_TOKEN environment variable
+API token stored securely using environment variables
+
+Model loaded externally in the model folder
 
 2️⃣ Prompt Creation
 
-Calculated BMI using height and weight
+Prompt is dynamically generated using user input:
 
-Determined BMI category
+BMI calculated using formula
 
-Constructed personalized prompt using user inputs
+BMI category determined
+
+Equipment list formatted
+
+Personalized instructions embedded
 
 3️⃣ Inference Testing
 
-Sent prompt to model
+Steps performed:
 
-Generated structured 5-day workout plan
+Prompt sent to model
 
-Displayed output in Streamlit interface
+Model generated workout plan
+
+Response validated for structure
+
+Displayed in Streamlit interface
+
 
 🧪 Sample Generated Output
-🏋️ Example User Profile
+Example User Profile
 
-Name: Rahul
+Age: 21
 
-Gender: Male
+Goal: Build Muscle
 
-Height: 175 cm
-
-Weight: 78 kg
-
-BMI: 25.47 (Overweight)
-
-Goal: Weight Loss
-
-Fitness Level: Beginner
+Level: Beginner
 
 Equipment: Dumbbells
 
-📅 Sample Plan (Excerpt)
+Generated Plan (Excerpt)
 
-Day 1 — Full Body Fat Burn
+Your BMI: 18.90 (Normal Weight)
+🗓️ Your 5-Day Workout Plan
+5-Day Personalized Workout Plan for Bhavya
+Note: Since Bhavya is a beginner and has a normal weight, the workout intensity will be moderate. It's important to focus on proper form and gradually increase the weight as she progresses.
 
-Jump Rope
+Day 1: Upper Body Focus
+Warm-Up (5-10 minutes)
+
+Jumping Jacks: 2 minutes
+Arm Circles: 30 seconds each direction
+Dynamic Stretching: Shoulder rolls and wrist rotations
+Dumbbell Bicep Curls
 
 Sets: 3
+Reps: 12-15
+Rest: 60 seconds
+Dumbbell Shoulder Press
 
-Duration: 1 min
+Sets: 3
+Reps: 12-15
+Rest: 60 seconds
+Dumbbell Rows
 
-Rest: 30 sec
+Sets: 3
+Reps: 12-15 (each arm)
+Rest: 60 seconds
+Dumbbell Flyes
 
+Sets: 3
+Reps: 12-15
+Rest: 60 seconds
+Tricep Dips (using a chair)
+
+Sets: 3
+Reps: 10-12
+Rest: 60 seconds
+Cool Down and Stretch (5-10 minutes)
+Static Stretching: Focus on arms, shoulders, and back
+
+
+Day 2: Full Body
+Warm-Up (5-10 minutes)
+
+Mountain Climbers: 2 minutes
+Leg Swings: 30 seconds each leg
+Arm Circles: 30 seconds each direction
 Dumbbell Squats
 
 Sets: 3
-
-Reps: 12
-
-Rest: 60 sec
-
-Push-ups
+Reps: 15-20
+Rest: 60 seconds
+Dumbbell Lunges
 
 Sets: 3
+Reps: 12-15 (each leg)
+Rest: 60 seconds
+Dumbbell Chest Press
 
-Reps: 10
+Sets: 3
+Reps: 12-15
+Rest: 60 seconds
 
-Rest: 60 sec
+Dumbbell Bent Over Rows
 
-The model generated structured plans for all five days with progressive intensity.
+Sets: 3
+Reps: 12-15
+Rest: 60 seconds
+Plank (hold with a dumbbell on each side for added resistance)
 
-🚀 Hugging Face Space Deployment
+Sets: 3
+Time: 30-45 seconds
+Rest: 60 seconds
+Cool Down and Stretch (5-10 minutes)
+Static Stretching: Focus on legs, back, and core
 
-🔗 Deployment Link: https://huggingface.co/spaces/srbhavya01/Module_2
 
-🖥️ Technologies Used
+Day 3: Rest and Recovery
+Rest Day
+Gentle stretching or light activities like walking or yoga
+Focus on proper nutrition and hydration
 
-Python
 
-Streamlit
+Day 4: Lower Body Focus
+Warm-Up (5-10 minutes)
+Leg Swings: 30 seconds each leg
+Hip Circles: 30 seconds each direction
+Dumbbell Deadlifts
 
-Hugging Face Hub
+Sets: 3
+Reps: 12-15
+Rest: 60 seconds
+Dumbbell Sumo Squats
 
-Large Language Model (LLM)
+Sets: 3
+Reps: 15-20
+Rest: 60 seconds
 
-Docker (for containerization)
+Dumbbell Calf Raises
 
-📌 Conclusion
+Sets: 3
+Reps: 15-20
+Rest: 60 seconds
+Dumbbell Step-Ups
 
-This milestone successfully demonstrates the application of generative AI in personalized fitness planning. The system can be extended with diet plans, progress tracking, and mobile deployment in future work.
+Sets: 3
+Reps: 12-15 (each leg)
+Rest: 60 seconds
+Cool Down and Stretch (5-10 minutes)
+Static Stretching: Focus on legs and glutes
+
+
+Day 5: Core and Upper Body
+Warm-Up (5-10 minutes)
+
+Arm Swings: 30 seconds each direction
+Leg Swings: 30 seconds each leg
+Dumbbell Russian Twists
+
+Sets: 3
+Reps: 15-20 (each side)
+Rest: 60 seconds
+Dumbbell Plank with Leg Lifts
+
+Sets: 3
+Time: 30-45 seconds
+Rest: 60 seconds
+Dumbbell Push-Ups
+
+Sets: 3
+Reps: 10-12
+Rest: 60 seconds
+Dumbbell Rows (standing with a dumbbell in each hand)
+
+Sets: 3
+Reps: 12-15 (each arm)
+Rest: 60 seconds
+Cool Down and Stretch (5-10 minutes)
+Static Stretching: Focus on core, chest, and arms
+
+General Tips:
+Hydration: Drink plenty of water throughout the day.
+Nutrition: Focus on balanced meals with lean proteins, complex carbohydrates, and healthy fats.
+Consistency: Stick to the plan and gradually increase the weight as you get stronger.
+Form: Prioritize proper form over the weight used. Incorrect form can lead to injuries.
+Feel free to adjust the weights and reps based on how your body feels. If you experience any discomfort or pain, consult a healthcare professional.
+
+🌐 Hugging Face Space Deployment Link
+
+👉 Deployed app link here:
+
+[https://huggingface.co/spaces/srbhavya01/Module_2]
