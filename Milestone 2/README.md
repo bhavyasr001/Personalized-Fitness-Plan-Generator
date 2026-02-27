@@ -183,7 +183,6 @@ Dumbbell Chest Press
 Sets: 3
 Reps: 12-15
 Rest: 60 seconds
-
 Dumbbell Bent Over Rows
 
 Sets: 3
@@ -218,7 +217,6 @@ Dumbbell Sumo Squats
 Sets: 3
 Reps: 15-20
 Rest: 60 seconds
-
 Dumbbell Calf Raises
 
 Sets: 3
@@ -235,7 +233,6 @@ Static Stretching: Focus on legs and glutes
 
 Day 5: Core and Upper Body
 Warm-Up (5-10 minutes)
-
 Arm Swings: 30 seconds each direction
 Leg Swings: 30 seconds each leg
 Dumbbell Russian Twists
