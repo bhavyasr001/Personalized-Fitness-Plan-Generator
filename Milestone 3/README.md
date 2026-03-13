@@ -1,8 +1,7 @@
 FitPlan AI – Personalized Fitness & Diet Generator
 
 1. Objective of the Milestone
-
-The objective of this milestone is to develop an AI-powered system that generates personalized workout and diet plans based on user inputs such as age, gender, fitness goal, BMI, and available equipment. The system uses a Large Language Model to generate structured responses that guide users toward achieving their fitness goals.
+   The objective of this milestone is to develop an AI-powered system that generates personalized workout and diet plans based on user inputs such as age, gender, fitness      goal, BMI, and available equipment. The system uses a Large Language Model to generate structured responses that guide users toward achieving their fitness goals.
 
 2. Model Name Used
 
