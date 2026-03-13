@@ -178,7 +178,7 @@ Lateral Raises | 3 | 12 | 45s
 
 Project Deployment Link:
 
-https://huggingface.co/spaces/your-username/fitplan-ai
+[https://huggingface.co/spaces/Infoysprojectwork/AI-Fitness-Plan-Generator]
 
 ---
 
