@@ -133,3 +133,9 @@ The goal of this milestone is to:
 This milestone demonstrates the integration of **health analytics and web development** to create a meaningful and user-centric application that promotes better fitness decisions.
 
 ---
+
+🌐 Hugging Face Space Deployment Link
+
+👉 Deployed app link here:
+
+[https://huggingface.co/spaces/Infoysprojectwork/AI-Fitness-Plan-Generator]
