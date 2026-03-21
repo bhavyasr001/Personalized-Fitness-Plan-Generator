@@ -118,10 +118,13 @@ The goal of this milestone is to:
 
 ## 🔮 Future Enhancements
 
-🚀 Add AI-based recommendations
-📊 Include diet plans and calorie tracking
-📱 Make mobile app version
-📄 Export fitness plan as PDF
+🚀 Add AI-based recommendations.
+
+📊 Include diet plans and calorie tracking.
+
+📱 Make mobile app version.
+
+📄 Export fitness plan as PDF.
 
 ---
 
